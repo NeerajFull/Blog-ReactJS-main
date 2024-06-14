@@ -84,7 +84,6 @@ const CreateBlog = () => {
                     for (let i = 0; i < myBlogs.length; i++) {
                         if (myBlogs[i]._id == location.state.blogId) {
                             myBlog.push(data.data.blog);
-                            break;
                         } else {
                             myBlog.push(myBlogs[i]);
                         }
@@ -95,7 +94,6 @@ const CreateBlog = () => {
                     for (let i = 0; i < allBlogs.length; i++) {
                         if (allBlogs[i]._id == location.state.blogId) {
                             allBlog.push(data.data.blog);
-                            break;
                         } else {
                             allBlog.push(allBlogs[i]);
                         }
@@ -106,13 +104,12 @@ const CreateBlog = () => {
                     for (let i = 0; i < userBlogs.length; i++) {
                         if (userBlogs[i]._id == location.state.blogId) {
                             userBlog.push(data.data.blog);
-                            break;
                         } else {
                             userBlog.push(userBlogs[i]);
                         }
                     }
                     dispatch(setUserBlogs(userBlog));
-                    
+
                     navigate("/my-blogs");
                 } else {
                     navigate("/login");
