@@ -1,6 +1,5 @@
-import { useDispatch, useSelector } from "react-redux";
+
 import { useNavigate } from "react-router-dom";
-import { setAllBlogs, setMyBlogs, setUserBlogs } from "../redux/blogsSlice";
 
 const EditIcon = ({ title, description, image, blogId }) => {
 

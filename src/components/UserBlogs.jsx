@@ -1,7 +1,7 @@
 import BlogCard from "./BlogCard";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
 import { setUserBlogs } from "../redux/blogsSlice";
 
