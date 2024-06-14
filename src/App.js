@@ -61,7 +61,7 @@ function App() {
       }
     }
     getBlogs()
-  }, []);
+  }, [isLogin]);
 
   return (
     <div>
